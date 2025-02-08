@@ -4,11 +4,13 @@ import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <>
+  
       <Navbar />
-      <div>
+      <div className="overflow-hidden">
         <Main />
       </div>
       <Toaster />
+
     </>
   );
 }

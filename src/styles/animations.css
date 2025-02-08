@@ -1,0 +1,12 @@
+@keyframes bounce-short {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px); 
+    }
+  }
+  
+  .bounce-short {
+    animation: bounce-short 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }

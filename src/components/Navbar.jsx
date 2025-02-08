@@ -92,7 +92,7 @@ const Navbar = () => {
                   <a
                     href={git}
                     target="_blank"
-                    className="flex gap-1  hover:text-rose-600"
+                    className="flex gap-1 hover:text-rose-600 shadow-md bounce-short shadow-red-300 border-1 border-red-300 px-2 py-2 rounded mt-[-8px]"
                   >
                     <span>{icon}</span> {text}
                   </a>

@@ -9,6 +9,7 @@ import {
   FaTelegram,
   FaCss3Alt,
 } from "react-icons/fa";
+import { FaHandPointDown } from "react-icons/fa";
 import { FaLinkedin, FaHtml5, FaSquareJs } from "react-icons/fa6";
 import { RiReactjsLine, RiNodejsLine } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
@@ -141,14 +142,18 @@ const Home = () => {
             </div>
             <div className="">
               <a
-                href="https://shaik-azeez.tiiny.site/"
+                // href="https://shaik-azeez.tiiny.site/"
+                href="https://cloudstorge.in/drive/s/PB5t8j7LJXBTGfNTyzdjxEhpqrFtNQ"
                 download="Resume"
                 target="_blank"
+                className="mt-10"
               >
-                <button className="font-medium text-[1rem] px-3 py-3 w-56 flex gap-5 bg-white shadow-md shadow-red-300 hover:scale-105 duration-200 rounded-md mt-10 mx-auto tracking-wide md:mt-11 md:mx-0 ">
-                  Download Resume
+                  <FaHandPointDown className="text-red-600 w-7 h-7 bounce-short mt-14 text-center mx-auto md:mx-0"/>
+                <button className="font-medium text-[1.1rem] px-4 py-3 w-56 flex gap-5 bg-white shadow-md shadow-red-300 hover:scale-105 duration-200 rounded-md mx-auto  md:mx-0  ">
+                  {/* Download Resume */} Discover Talent
                   <FaDownload className="text-red-500 h-4 w-4 mt-1" />
                 </button>
+               
               </a>
             </div>
           </div>
