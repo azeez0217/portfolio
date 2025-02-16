@@ -62,78 +62,73 @@ const Experience = () => {
     },
   ];
   return (
-    <div name="Experience">
-      <div className="bg-gray-100 pb-12">
-        <div className="container mx-auto" id="about">
-          <div className="max-w-screen-2xl container px-5 mx-auto md:px-20 py-8">
-            <h3 className="text-2xl font-semibold text-center text-red-600 mb-8">
-              Education and Experience
-            </h3>
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-            <div className="mt-6 w-full h-auto bg-white shadow-md shadow-red-200 px-10 py-6 rounded-md cursor-pointer hover:scale-105 transition duration-200 border-l-4 border-red-600">
-                <h4 className="text-2xl font-semibold tracking-wide flex justify-between border-b-2 pb-2">
-                  Experience
-                  <IoIosPersonAdd className="h-10 w-10" />
-                </h4>
-                <h6 className="text-lg font-semibold text-red-600 mt-3">
-                  Summary
-                </h6>
-                <p className="mt-2 text-base mb-3">
-                  Experienced Frontend Developer with 3+ years of expertise in
-                  creating responsive, user-friendly web applications using
-                  HTML5, CSS3, JavaScript, and React.js. Skilled in
-                  collaborating with cross-functional teams to deliver
-                  innovative digital solutions and committed to enhancing user
-                  experiences while staying updated with industry trends and
-                  tools.
-                </p>
-              </div>
-              <div className="mt-6 w-full h-auto text-left bg-white shadow-md shadow-red-200 px-10 py-6 cursor-pointer rounded-md hover:scale-105 transition duration-200 border-l-4 border-red-600">
-                <h4 className="text-2xl font-semibold tracking-wide flex justify-between border-b-2 pb-2">
-                  Education
-                  <FaGraduationCap className="h-10 w-10" />
-                </h4>
-                <h6 className="text-lg font-semibold text-red-600 mt-3">
-                  JNTU Kakinada
-                </h6>
-                <p className="mt-2 text-lg text-gray-700">
-                  Priyadarshini Institute of Science and Technology
-                </p>
-                <p className="mt-2 mb-3">
-                  B-Tech in Mechanical Engineering
-                  <span className="px-2">&nbsp;2016-2019</span> with
-                  <span className="px-2 text-red-600">78.25%</span>
-                </p>
-              </div>
-          
-            </div>
-            <div className="mt-12">
-              <h4 className="text-2xl font-semibold text-center text-red-600 mb-6">
-                Skills
-              </h4>
-              <div className="flex flex-wrap justify-center gap-8 ">
-                {skills.map((skill) => {
-                  return (
-                    <div className="text-center" key={skill.id}>
-                      <div className="bg-white shadow-md shadow-red-200 px-3 py-2 rounded-md text-center border-red-200 border-solid border hover:scale-110 duration-200 cursor-pointer">
-                        <p className="text-lg font-semibold text-gray-700 flex justify-center">
-                          {skill.icon}
-                        </p>
-                      </div>
-                      <p className="mt-2 text-gray-400 font-semibold uppercase">
-                        {skill.name}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+
+    <div name="Experience" className="bg-gray-50 py-16">
+    <div className="container mx-auto px-5 md:px-12">
+
+      <h3 className="text-3xl md:text-2xl font-bold text-center text-red-600 mb-12">
+        Education & Experience
+      </h3>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <div className="w-full bg-white shadow-lg shadow-red-100 px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl border-l-4 border-red-600 cursor-pointer">
+          <h4 className="text-2xl font-semibold tracking-wide flex justify-between border-b-2 pb-3">
+            Experience
+            <IoIosPersonAdd className="h-10 w-10 text-red-500" />
+          </h4>
+          <h6 className="text-lg font-semibold text-red-600 mt-4">
+            Summary
+          </h6>
+          <p className="mt-3 text-gray-600 leading-relaxed">
+            Experienced Frontend Developer with 3+ years of expertise in
+            building responsive and user-friendly web applications using
+            HTML5, CSS3, JavaScript, and React.js. Passionate about enhancing
+            user experiences and collaborating with cross-functional teams.
+          </p>
+        </div>
+
+        <div className="w-full bg-white shadow-lg shadow-red-100 px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl border-l-4 border-red-600 cursor-pointer">
+          <h4 className="text-2xl font-semibold tracking-wide flex justify-between border-b-2 pb-3">
+            Education
+            <FaGraduationCap className="h-10 w-10 text-red-500" />
+          </h4>
+          <h6 className="text-lg font-semibold text-red-600 mt-4">
+            JNTU Kakinada
+          </h6>
+          <p className="mt-2 text-lg text-gray-700">
+            Priyadarshini Institute of Science and Technology
+          </p>
+          <p className="mt-2">
+            B-Tech in Mechanical Engineering{" "}
+            <span className="px-2 text-gray-600">2016-2019</span> with{" "}
+            <span className="px-2 text-red-600 font-semibold">78.25%</span>
+          </p>
         </div>
       </div>
-      <hr />
+        
+      <div className="mt-16">
+        <h4 className="text-3xl font-bold text-center text-red-600 mb-8">
+          Skills
+        </h4>
+        <div className="flex flex-wrap justify-center gap-6">
+          {skills.map((skill) => (
+            <div className="text-center" key={skill.id}>
+              <div className="bg-white shadow-md shadow-red-200 px-5 py-4 rounded-lg border border-red-200 hover:scale-110 duration-200 cursor-pointer transition-all">
+                <p className="text-xl font-semibold text-gray-700 flex justify-center">
+                  {skill.icon}
+                </p>
+              </div>
+              <p className="mt-2 text-gray-500 font-semibold uppercase text-sm">
+                {skill.name}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-
+    <hr className="mt-16 border-t-2 border-gray-300" />
+  </div>
   );
 };
 

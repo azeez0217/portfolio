@@ -21,46 +21,48 @@ const Portfolio = () => {
   ];
 
   return (
-    <div
-      className="max-w-screen-2xl container mx-auto px-4 md:px-20 "
-      name="Portfolio"
-    >
-      <div className="mb-16">
-        <h1 className="text-3xl font-semibold text-gray-900 mb-1">Portfolio</h1>
-        <span className="underline-offset-1 mt-2">
-          Present & Featured Projects
-        </span>
-        <div className="w-3/4 mt-10 mx-auto flex flex-col md:flex-row items-center md:flex-wrap md:justify-center md:space-x-3 my-5">
-          {cardItems.map((card) => (
-            <div
-              key={card.id}
-              className="w-[100%] sm:w-[75%] md:w-[45%] lg:w-[40%] xl:w-[32%] h-[520px] md:h-[470px] flex flex-col shadow-md shadow-red-200 rounded-md mb-5 md:mb-3 mx-3 cursor-pointer hover:scale-105 duration-200 hover:shadow-xl"
-            >
-              <div className="border-2 border-sloid border-red-300 rounded-t-md">
-                <img
-                  src={card.image}
-                  alt={card.name}
-                  className="w-full h-48 rounded-t-md"
-                />
-              </div>
-              <div className="px-3 mt-5 h-[220px] md:h-44">
-                <h4 className="text-[1.1rem] font-semibold">{card.name}</h4>
-                <p className="text-[15px] mt-2 mb-2">{card.description}</p>
-              </div>
-              <div className="mt-5 flex justify-center gap-4">
-                <button className="bg-white w-24 px-1.5 py-1.5 rounded-md border border-solid border-red-300 shadow-md shadow-red-300 ">
-                  Demo
-                </button>
-                <button className="bg-white w-24 px-1.5 py-1.5 rounded-md border border-solid border-red-300 shadow-md shadow-red-300 ">
-                  Git Hub
-                </button>
-              </div>
+  
+    <div className="max-w-screen-2xl container mx-auto px-4 md:px-20" name="Portfolio">
+    <div className="mb-16">
+      <h1 className="text-3xl font-semibold text-gray-900 mb-1">Portfolio</h1>
+      <span className="underline-offset-1 mt-2">Present & Featured Projects</span>
+  
+  
+      <div className="flex flex-wrap justify-center gap-6 mt-10 mx-auto my-5">
+        {cardItems.map((card) => (
+          <div
+            key={card.id}
+            className="bg-white shadow-md shadow-red-200 rounded-md cursor-pointer hover:shadow-xl flex flex-col w-full sm:w-[48%] md:w-[31%] lg:w-[23%] min-h-[450px]"
+          >
+            {/* Image */}
+            <div className="border-2 border-solid border-red-300 rounded-t-md">
+              <img src={card.image} alt={card.name} className="w-full h-48 object-cover rounded-t-md" />
             </div>
-          ))}
-        </div>
+  
+            {/* Description */}
+            <div className="p-4 flex flex-col flex-grow">
+              <h4 className="text-lg font-semibold">{card.name}</h4>
+              <p className="text-sm mt-2 mb-4 flex-grow">{card.description}</p>
+            </div>
+  
+            {/* Buttons sections */}
+            <div className="flex justify-center gap-4 p-4">
+              <button className="bg-white w-24 px-2 py-1.5 rounded-md border border-red-300 shadow-md shadow-red-300 hover:scale-105 duration-150  hover:bg-red-600 hover:text-white hover:border-1 hover:border-gray-600">
+                Demo
+              </button>
+              <button className="bg-white w-24 px-2 py-1.5 rounded-md border border-red-300 shadow-md shadow-red-300 hover:scale-105 duration-150 hover:bg-red-600 hover:text-white hover:border-1 hover:border-gray-600">
+                GitHub
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
-      <hr />
     </div>
+    <hr />
+  </div>
+  
+  
+
   );
 };
 
