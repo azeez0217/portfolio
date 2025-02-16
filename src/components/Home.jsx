@@ -100,11 +100,6 @@ const technoloyIcon=[
             </p>
             <br />
             <p className="md:text-md text-justify">
-              {/* I am a web developer passionate about creating user-friendly and
-              engaging online experiences. Fascinated by how websites work, I
-              now strive to build beautiful and functional websites. I believe
-              in the power of technology to connect and inspire. I am always
-              learning and eager to share my creations with the community. */}
               Welcome to my portfolio! I'm a web developer passionate about
               creating engaging online experiences. Fascinated by how websites
               work, I strive to build beautiful and functional sites that
