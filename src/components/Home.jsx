@@ -49,19 +49,19 @@ const technoloyIcon=[
    },
    {
     id:2,
-    icon: <FaCss3Alt className={techIconStyle} title="Html"/>,
+    icon: <FaCss3Alt className={techIconStyle} title="Cascading Style Sheetcls"/>,
    },
    {
     id:3,
-    icon: <FaSquareJs className={techIconStyle} title="Html"/>,
+    icon: <FaSquareJs className={techIconStyle} title="Java Script"/>,
    },
    {
     id:4,
-    icon: <RiReactjsLine className={techIconStyle} title="Html"/>,
+    icon: <RiReactjsLine className={techIconStyle} title="React js"/>,
    },
    {
     id:5,
-    icon: <RiNodejsLine className={techIconStyle} title="Html"/>,
+    icon: <RiNodejsLine className={techIconStyle} title="Node Js"/>,
    },
   //  {
   //   id:6,
