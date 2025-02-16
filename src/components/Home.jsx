@@ -15,6 +15,60 @@ import { RiReactjsLine, RiNodejsLine } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 
 const Home = () => {
+ 
+ 
+  const iconStyle="w-6 h-6 cursor-pointer text-2xl hover:scale-110 duration-200 hover:shadow-xl hover:shadow-red-800";
+  const techIconStyle="cursor-pointer text-2xl hover:scale-110 duration-150 hover:shadow-xl hover:shadow-red-800"
+  const socialLinks =[
+   {
+    id:1,
+    icon: <FaFacebookSquare className={iconStyle}/>,
+    link:"https://www.facebook.com/share/1DuSP3D4Kw/"
+   },
+   {
+    id:2,
+    icon: <FaLinkedin className={iconStyle}/>,
+    link:"https://www.linkedin.com/in/shaik-azeez"
+   },
+   {
+    id:3,
+    icon: <FaYoutube className={iconStyle}/>,
+    link:"https://youtube.com/@shaikazeez0217?si=p7vpip2p_6Cl5CQi"
+   },
+   {
+    id:4,
+    icon: <FaTelegram className={iconStyle}/>,
+    link:"https://t.me/+918247017662~"
+   },
+  ]
+
+const technoloyIcon=[
+   {
+    id:1,
+    icon: <FaHtml5 className={techIconStyle} title="Html"/>,
+   },
+   {
+    id:2,
+    icon: <FaCss3Alt className={techIconStyle} title="Html"/>,
+   },
+   {
+    id:3,
+    icon: <FaSquareJs className={techIconStyle} title="Html"/>,
+   },
+   {
+    id:4,
+    icon: <RiReactjsLine className={techIconStyle} title="Html"/>,
+   },
+   {
+    id:5,
+    icon: <RiNodejsLine className={techIconStyle} title="Html"/>,
+   },
+  //  {
+  //   id:6,
+  //   icon: <SiExpress className={techIconStyle} title="Html"/>,
+  //  },
+]
+
   return (
     <>
       <div
@@ -65,35 +119,18 @@ const Home = () => {
                   Available on
                 </h1>
                 <ul className="flex space-x-2 justify-center">
-                  <li>
-                    <a
-                      href="https://www.facebook.com/share/1DuSP3D4Kw/"
-                      target="_blank"
-                    >
-                      <FaFacebookSquare className="cursor-pointer text-2xl hover:scale-110 duration-150" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/shaik-azeez"
-                      target="_blank"
-                    >
-                      <FaLinkedin className="cursor-pointer text-2xl hover:scale-110 duration-150" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://youtube.com/@shaikazeez0217?si=p7vpip2p_6Cl5CQi"
-                      target="_blank"
-                    >
-                      <FaYoutube className="cursor-pointer text-2xl hover:scale-110 duration-150" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://t.me/+918247017662~" target="_blank">
-                      <FaTelegram className="cursor-pointer text-2xl hover:scale-110 duration-150" />
-                    </a>
-                  </li>
+                  {
+                    socialLinks.map((logo)=>(
+                      <li key={logo.id}>
+                      <a
+                        href={logo.link}
+                        target="_blank"
+                      >
+                        {logo.icon}
+                      </a>
+                    </li>
+                    ))
+                  }
                 </ul>
               </div>
               <div className="mt-4 md:mt-0">
@@ -101,52 +138,22 @@ const Home = () => {
                   Currently working on
                 </h1>
                 <ul className="flex justify-center space-x-3 mt-2">
-                  <li>
-                    <FaHtml5
-                      className="cursor-pointer text-2xl hover:scale-110 duration-150"
-                      title="Html"
-                    />
-                  </li>
-                  <li>
-                    <FaCss3Alt
-                      className="cursor-pointer text-2xl hover:scale-110 duration-150"
-                      title="Cascading Style Sheets"
-                    />
-                  </li>
-                  <li>
-                    <FaSquareJs
-                      className="cursor-pointer text-2xl hover:scale-110 duration-150"
-                      title="Java Script"
-                    />
-                  </li>
-                  <li>
-                    <RiReactjsLine
-                      className="cursor-pointer text-2xl hover:scale-110 duration-150 "
-                      title="React Js"
-                    />
-                  </li>
-                  {/* <li>
-                    <RiNodejsLine
-                      className="cursor-pointer text-2xl hover:scale-110 duration-150"
-                      title="Node Js"
-                    />
-                  </li>
-                  <li>
-                    <SiExpress
-                      className="cursor-pointer text-2xl hover:scale-110 duration-150"
-                      title="Express Js"
-                    />
-                  </li> */}
+                  {
+                    technoloyIcon.map((logo)=>
+                     (<li key={logo.id}>
+                        {logo.icon}
+                     </li>
+                    ))
+                  }
                 </ul>
               </div>
             </div>
-            <div className="">
+            <div className="md:w-60">
               <a
-                // href="https://shaik-azeez.tiiny.site/"
                 href="https://cloudstorge.in/drive/s/PB5t8j7LJXBTGfNTyzdjxEhpqrFtNQ"
                 download="Resume"
                 target="_blank"
-                className="mt-10"
+                className="mt-10 !w-20"
               >
                   <FaHandPointDown className="text-red-600 w-7 h-7 bounce-short mt-14 text-center mx-auto md:mx-0"/>
                 <button className="font-medium text-[1.1rem] px-4 py-3 w-56 flex gap-5 bg-white shadow-md shadow-red-300 hover:scale-105 duration-200 rounded-md mx-auto  md:mx-0  ">

@@ -53,6 +53,7 @@ const Navbar = () => {
             duration={500}
             offset={-100}
             activeClass="active"
+            className="flex space-x-3 duration-200"
           >
             <img
               src={pic}
@@ -60,13 +61,14 @@ const Navbar = () => {
               className="h-14 w-14  cursor-pointer "
               title="Azeez portpolio"
             />
-          </Link>
-          <h1 className="font-semibold text-xl cursor-pointer">
+             <h1 className="font-semibold text-xl cursor-pointer">
             Azeez <span className="text-gray-500">Shaik</span>
             <p className="text-sm">
               Web developer <span className="text-gray-500">(React Js)</span>
             </p>
           </h1>
+          </Link>
+         
         </div>
         {/*Laptop Navbar */}
         <div>
