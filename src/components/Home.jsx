@@ -75,7 +75,7 @@ const technoloyIcon=[
         name="Home"
         className="max-w-screen-2xl container mx-auto px-4 md:px-20 "
       >
-        <div className="flex flex-col md:flex-row mb-32 my-36">
+        <div className="flex flex-col md:flex-row mb-28 my-36">
           <div className="md:w-1/2 mt-12 md:mt-20 space-y-2 order-2 md:order-1">
             <span className="text-xl">Hello, It's Me</span>
             <div className="flex space-x-3 text-2xl mb-2 md:text-4xl">
