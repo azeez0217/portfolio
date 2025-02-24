@@ -8,41 +8,8 @@ import { PiProjectorScreenFill } from "react-icons/pi";
 import { BsBookmarksFill } from "react-icons/bs";
 import { MdPermPhoneMsg } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
-const Navbar = () => {
+const Navbar = ({navItems}) => {
   const [menu, setMenu] = useState(false);
-  const navItems = [
-    {
-      id: 1,
-      text: "Home",
-      icon: <TiHome className="w-5 h-5" />,
-    },
-    {
-      id: 2,
-      text: "About",
-      icon: <IoIosPerson className="w-5 h-5" />,
-    },
-    {
-      id: 3,
-      text: "Portfolio",
-      icon: <PiProjectorScreenFill className="w-5 h-5" />,
-    },
-    {
-      id: 4,
-      text: "Experience",
-      icon: <BsBookmarksFill className="w-5 h-5" />,
-    },
-    {
-      id: 5,
-      text: "Contact Me",
-      icon: <MdPermPhoneMsg className="w-5 h-5" />,
-    },
-    {
-      id: 6,
-      text: "Git Hub",
-      git: "https://github.com/azeez0217",
-      icon: <FaGithub className="w-5 h-5" />,
-    },
-  ];
   return (
     <div className="max-w-screen-2xl container mx-auto  shadow-md h-20 fixed top-0 right-0 left-0 bg-white z-10">
       <div className="flex justify-between h-20 items-center px-4 md:px-20">
@@ -51,7 +18,8 @@ const Navbar = () => {
             to="Home"
             smooth={true}
             duration={700}
-            offset={-250}
+            offset={-50}
+            deley={1000}
             activeClass="active"
             className="flex space-x-3 duration-200"
           >
@@ -84,7 +52,7 @@ const Navbar = () => {
                     to={text}
                     smooth={true}
                     duration={500}
-                    offset={-100}
+                    offset={(text== 'About' || text=='Experience') ? -80: -110}
                     activeClass="active"
                     className="flex gap-1 hover:text-rose-600"
                   >
@@ -94,7 +62,7 @@ const Navbar = () => {
                   <a
                     href={git}
                     target="_blank"
-                    className="flex gap-1 hover:text-rose-600 shadow-md bounce-short shadow-red-300 border-1 border-red-300 px-2 py-2 rounded mt-[-8px]"
+                    className="flex gap-1 hover:text-rose-600 shadow-md bounce-short shadow-red-300 px-2 py-2 rounded mt-[-8px] border-[1px] border-red-400"
                   >
                     <span>{icon}</span> {text}
                   </a>
@@ -125,7 +93,7 @@ const Navbar = () => {
                     to={text}
                     smooth={true}
                     duration={500}
-                    offset={-100}
+                    offset={300}
                     activeClass="active"
                     onClick={() => setMenu(!menu)}
                   >

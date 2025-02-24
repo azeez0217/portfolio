@@ -3,72 +3,9 @@ import pic from "../assets/home_logo.avif";
 import { ReactTyped } from "react-typed";
 import resume from "../assets/Azeez _Resume.pdf";
 import { FaDownload } from "react-icons/fa";
-import {
-  FaFacebookSquare,
-  FaYoutube,
-  FaTelegram,
-  FaCss3Alt,
-} from "react-icons/fa";
 import { FaHandPointDown } from "react-icons/fa";
-import { FaLinkedin, FaHtml5, FaSquareJs } from "react-icons/fa6";
-import { RiReactjsLine, RiNodejsLine } from "react-icons/ri";
-import { SiExpress } from "react-icons/si";
 
-const Home = () => {
- 
- 
-  const iconStyle="w-6 h-6 cursor-pointer text-2xl hover:scale-110 duration-200 hover:shadow-xl hover:shadow-red-800";
-  const techIconStyle="cursor-pointer text-2xl hover:scale-110 duration-150 hover:shadow-xl hover:shadow-red-800"
-  const socialLinks =[
-   {
-    id:1,
-    icon: <FaFacebookSquare className={iconStyle}/>,
-    link:"https://www.facebook.com/share/1DuSP3D4Kw/"
-   },
-   {
-    id:2,
-    icon: <FaLinkedin className={iconStyle}/>,
-    link:"https://www.linkedin.com/in/shaik-azeez"
-   },
-   {
-    id:3,
-    icon: <FaYoutube className={iconStyle}/>,
-    link:"https://youtube.com/@shaikazeez0217?si=p7vpip2p_6Cl5CQi"
-   },
-   {
-    id:4,
-    icon: <FaTelegram className={iconStyle}/>,
-    link:"https://t.me/+918247017662~"
-   },
-  ]
-
-const technoloyIcon=[
-   {
-    id:1,
-    icon: <FaHtml5 className={techIconStyle} title="Html"/>,
-   },
-   {
-    id:2,
-    icon: <FaCss3Alt className={techIconStyle} title="Cascading Style Sheetcls"/>,
-   },
-   {
-    id:3,
-    icon: <FaSquareJs className={techIconStyle} title="Java Script"/>,
-   },
-   {
-    id:4,
-    icon: <RiReactjsLine className={techIconStyle} title="React js"/>,
-   },
-   {
-    id:5,
-    icon: <RiNodejsLine className={techIconStyle} title="Node Js"/>,
-   },
-  //  {
-  //   id:6,
-  //   icon: <SiExpress className={techIconStyle} title="Html"/>,
-  //  },
-]
-
+const Home = ({ socialLinks, technoloyIcon }) => {
   return (
     <>
       <div
@@ -114,18 +51,13 @@ const technoloyIcon=[
                   Available on
                 </h1>
                 <ul className="flex space-x-2 justify-center">
-                  {
-                    socialLinks.map((logo)=>(
-                      <li key={logo.id}>
-                      <a
-                        href={logo.link}
-                        target="_blank"
-                      >
+                  {socialLinks.map((logo) => (
+                    <li key={logo.id}>
+                      <a href={logo.link} target="_blank">
                         {logo.icon}
                       </a>
                     </li>
-                    ))
-                  }
+                  ))}
                 </ul>
               </div>
               <div className="mt-4 md:mt-0">
@@ -133,13 +65,9 @@ const technoloyIcon=[
                   Currently working on
                 </h1>
                 <ul className="flex justify-center space-x-3 mt-2">
-                  {
-                    technoloyIcon.map((logo)=>
-                     (<li key={logo.id}>
-                        {logo.icon}
-                     </li>
-                    ))
-                  }
+                  {technoloyIcon.map((logo) => (
+                    <li key={logo.id}>{logo.icon}</li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -150,12 +78,11 @@ const technoloyIcon=[
                 target="_blank"
                 className="mt-10 !w-20"
               >
-                  <FaHandPointDown className="text-red-600 w-7 h-7 bounce-short mt-14 text-center mx-auto md:mx-0"/>
-                <button className="font-medium text-[1.1rem] px-4 py-3 w-56 flex gap-5 bg-white shadow-md shadow-red-300 hover:scale-105 duration-200 rounded-md mx-auto  md:mx-0  ">
+                <FaHandPointDown className="text-red-600 w-7 h-7 bounce-short mt-14 text-center mx-auto md:mx-0" />
+                <button className="font-medium text-[1.1rem] px-4 py-3 w-56 flex gap-5 border-[1px] border-red-300 rounded-md mx-auto md:mx-0 shadow-sm shadow-red-300 hover:shadow-md hover:shadow-red-600 hover:border-red-600">
                   {/* Download Resume */} Discover Talent
                   <FaDownload className="text-red-500 h-4 w-4 mt-1" />
                 </button>
-               
               </a>
             </div>
           </div>

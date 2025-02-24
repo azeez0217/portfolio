@@ -1,4 +1,3 @@
-
 import { MdEmail } from "react-icons/md";
 import { RiPhoneFill } from "react-icons/ri";
 const Footer = () => {

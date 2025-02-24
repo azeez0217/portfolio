@@ -1,6 +1,5 @@
-
 import { useForm } from "react-hook-form";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-scroll";
 const Contact = () => {
   const {
@@ -25,7 +24,7 @@ const Contact = () => {
       toast.success("Your message has been sent");
       reset();
     } catch (error) {
-      toast.error("Something went wrong",error);
+      toast.error("Something went wrong", error);
     }
   };
   return (
@@ -162,6 +161,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
+        <Toaster />
       </div>
     </>
   );
