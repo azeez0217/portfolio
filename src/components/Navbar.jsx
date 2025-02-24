@@ -93,7 +93,7 @@ const Navbar = ({navItems}) => {
                     to={text}
                     smooth={true}
                     duration={500}
-                    offset={300}
+                    offset={(text== 'About' || text=='Experience') ? -80: -110}
                     activeClass="active"
                     onClick={() => setMenu(!menu)}
                   >

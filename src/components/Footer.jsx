@@ -19,7 +19,7 @@ const Footer = () => {
               <p className="font-Medium text-[1rem]">
                 Reach out to me through!
               </p>
-              <div className="flex flex-col gap-12 justify-center md:flex-row mt-4">
+              <div className="flex flex-col gap-3 md:gap-12 justify-center md:flex-row mt-4">
                 <p className="flex gap-1">
                   <MdEmail className="mt-1 h-5 w-5" />
                   <span className=" text-red-600 font-semibold cursor-pointer">

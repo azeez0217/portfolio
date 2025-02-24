@@ -55,7 +55,7 @@ const Contact = () => {
             onSubmit={handleSubmit(onSubmit)}
             //action="https://getform.io/f/axooxxgb"
             //method="POST"
-            className="bg-slate-200 w-96 px-8 py-6 rounded-md"
+            className="bg-slate-300 w-96 px-8 py-6 rounded-md"
           >
             <h1 className="text-xl font-semibold mb-4">Send Your Message</h1>
             <div className="flex flex-col mb-4 h-[75px]">
@@ -155,7 +155,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="bg-black text-white rounded-md px-3 py-2 hover:bg-slate-700 duration-200"
+              className="bg-white text-black rounded-md border-[1px] border-red-400 px-3 py-2 hover:border-1 hover:border-blue-900 duration-200 hover:shadow-md hover:shadow-blue-900"
             >
               Send
             </button>
