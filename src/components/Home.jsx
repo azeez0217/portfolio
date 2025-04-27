@@ -37,11 +37,12 @@ const Home = ({ socialLinks, technoloyIcon }) => {
             </p>
             <br />
             <p className="md:text-md text-justify">
-              Welcome to my portfolio! I'm a web developer passionate about
-              creating engaging online experiences. Fascinated by how websites
-              work, I strive to build beautiful and functional sites that
-              connect people. I believe in the power of technology to inspire
-              action. Let's explore my work together...
+              Welcome to my portfolio! I'm a web developer with 3+ years of
+              experience, passionate about creating engaging online experiences.
+              Fascinated by how websites work, I strive to build beautiful and
+              functional sites that connect people. With a strong belief in the
+              power of technology to inspire action, I am dedicated to crafting
+              solutions that make a difference. Let's explore my work together!
             </p>
             <br />
             {/*Social-Media Icons */}

@@ -3,7 +3,7 @@ import website_one from "../assets/portpolio/stop_watch.jpeg";
 import website_two from "../assets/portpolio/todolist.jpg";
 import website_three from "../assets/portpolio/qr_code.png";
 import website_four from "../assets/portpolio/bmi_calculator.png";
-
+import website_five from '../assets/portpolio/Pagination_sorting.jpg'
 export const cardItems = [
     {
       id: 1,
@@ -40,5 +40,14 @@ export const cardItems = [
         "Enter your height and weight to calculate your BMI instantly! Our BMI calculator provides quick results, helping you track your health and fitness. Try it now and get insights into your body mass index effortlessly!",
       gitHub: "https://github.com/azeez0217/bmi_calculator",
       demo: "https://azeezbmicalculator.netlify.app/",
+    },
+    {
+      id: 4,
+      image: website_five,
+      name: "Paginatio & Sorting",
+      description:
+        "Pagination divides content into pages for better navigation. Dynamic sorting reorders data instantly based on selected criteria like price, name, or popularity.",
+      gitHub: "https://github.com/azeez0217/Pagination",
+      demo: "https://azeez-reactpagination.netlify.app/",
     },
   ];
