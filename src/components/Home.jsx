@@ -74,7 +74,7 @@ const Home = ({ socialLinks, technoloyIcon }) => {
             </div>
             <div className="md:w-60">
               <a
-                href="https://cloudstorge.in/drive/s/PB5t8j7LJXBTGfNTyzdjxEhpqrFtNQ"
+                href="https://drive.google.com/file/d/1CwHZQ6-7Y_B_btlYP0KzCExPMcdp0eBZ/view"
                 download="Resume"
                 target="_blank"
                 className="mt-10 !w-20"
